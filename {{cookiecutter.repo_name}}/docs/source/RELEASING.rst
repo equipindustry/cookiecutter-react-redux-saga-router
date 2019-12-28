@@ -34,7 +34,7 @@ Make a new version of {{ cookiecutter.repo_name }} in the following steps:
 
 .. code-block:: sh
 
-   $ bumplus -v $VERSION
+    bumplus -v $VERSION
 
 * Dry Run: ``bumpversion --dry-run --verbose --new-version 0.8.1 patch``
 * Do it: ``bumpversion --new-version 0.8.1 patch``
@@ -50,8 +50,8 @@ Make a deploy to aws s3 Do the following steps:
 
 .. code-block:: sh
 
-   $ make yarn command=build
-   $ make aws.deploy
+    $ make yarn command=build
+    $ make aws.deploy
 
 .. _bumpversion: https://pypi.org/project/bumpversion/
 .. _pytest: https://docs.pytest.org/en/latest/

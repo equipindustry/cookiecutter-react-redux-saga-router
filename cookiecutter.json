@@ -1,0 +1,29 @@
+{
+  "author_name": "Your name",
+  "aws_vault": "equipindustry",
+  "company": "EquipIndustry",
+  "domain_repository": "https://github.com",
+  "email": "slovacus@gmail.com",
+  "full_name": "Luis Mayta",
+  "group_name": "equipindustry",
+  "node_version": "12.13.0",
+  "owner_repository": "equipindustry",
+  "project_name": "project_name",
+  "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+  "project_port": "3000",
+  "python_version": "3.8.0",
+  "release_date": "2019-12-27",
+  "repo_name": "react-redux",
+  "repository": ["github", "bitbucket", "gitlab"],
+  "short_description": "Project for react redux",
+  "version": "0.0.0",
+  "year": "2019",
+  "open_source_license": [
+    "MIT license",
+    "BSD license",
+    "ISC license",
+    "Apache Software License 2.0",
+    "GNU General Public License v3",
+    "Not open source"
+  ]
+}

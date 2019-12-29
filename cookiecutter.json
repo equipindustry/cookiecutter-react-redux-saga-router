@@ -17,6 +17,7 @@
   "repository": ["github", "bitbucket", "gitlab"],
   "short_description": "Project for react redux",
   "version": "0.0.0",
+  "use_docker": "true",
   "year": "2019",
   "open_source_license": [
     "MIT license",

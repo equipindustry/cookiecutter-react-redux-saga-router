@@ -7,7 +7,7 @@ services:
   app:
     environment: &environment
       - STAGE=local
-    image: {{ cookiecutter.project_slug }}-app-dev
+    image: {{ cookiecutter.repository_name }}-app-dev
     build:
       args:
         stage: dev
@@ -16,7 +16,7 @@ services:
     ports:
       - '3000:3000'
     restart: always
-    image: {{ cookiecutter.project_slug }}-node-dev
+    image: {{ cookiecutter.repository_name }}-node-dev
     build:
       context: .
       dockerfile: provision/docker/nodejs/Dockerfile
@@ -29,7 +29,7 @@ services:
       - .env
 
   check:
-    image: {{ cookiecutter.project_slug }}-check-dev
+    image: {{ cookiecutter.repository_name }}-check-dev
     environment: *environment
     build:
       context: .

@@ -1,13 +1,13 @@
-{{ cookiecutter.project_slug }}
-===============================
+{{ cookiecutter.repository_name }}
+==================================
 
-{{ cookiecutter.short_description }}
+{{ cookiecutter.project_description }}
 
 :Version: {{cookiecutter.version}}
-:Web: {{cookiecutter.domain_repository}}/{{cookiecutter.owner_repository}}/{{cookiecutter.repo_name}}
-:Download: {{cookiecutter.domain_repository}}/{{cookiecutter.owner_repository}}/{{cookiecutter.repo_name}}
-:Source: {{cookiecutter.domain_repository}}/{{cookiecutter.owner_repository}}/{{cookiecutter.repo_name}}
-:Keywords: {{cookiecutter.project_name}}
+:Web: {{cookiecutter.repository_domain}}/{{cookiecutter.repository_owner}}/{{cookiecutter.repository_name}}
+:Download: {{cookiecutter.repository_domain}}/{{cookiecutter.repository_owner}}/{{cookiecutter.repository_name}}
+:Source: {{cookiecutter.repository_domain}}/{{cookiecutter.repository_owner}}/{{cookiecutter.repository_name}}
+:Keywords: {{cookiecutter.repository_name}}
 
 .. contents:: Table of Contents:
     :local:
@@ -29,7 +29,7 @@ Contributions are very welcome.
 Please read `How To Contribute` CONTRIBUTING_ for details.
 
 Issue report template should be automatically applied if you are sending it from bitbucket UI as well; otherwise you
-can find it at `ISSUE_TEMPLATE.md <{{cookiecutter.domain_repository}}/{{cookiecutter.owner_repository}}/{{cookiecutter.repo_name}}/blob/master/.jira/issue_templates/ISSUE_TEMPLATE.md>`_
+can find it at `ISSUE_TEMPLATE.md <{{cookiecutter.repository_domain}}/{{cookiecutter.repository_owner}}/{{cookiecutter.repository_name}}/blob/master/.jira/issue_templates/ISSUE_TEMPLATE.md>`_
 
 Reporting Security Issues
 -------------------------
@@ -57,7 +57,6 @@ Project Start
 .. code:: bash
 
     $ make environment
-    $ pipenv shell --fancy
     $ make setup
     $ make yarn.install
 
@@ -78,7 +77,7 @@ Execute the next:
 
 .. code:: bash
 
-    pyenv shell 3.8.0
+    pyenv shell {{ cookiecutter.python_version }}
 
 
 License
@@ -101,7 +100,8 @@ Please see `CONTRIBUTING`_ for details.
 Versioning
 ----------
 
-Releases are managed using gitlab release feature. We use [Semantic Versioning](http://semver.org) for all
+Releases are managed using {{ cookiecutter.repository }} release feature.
+We use [Semantic Versioning](http://semver.org) for all
 the releases. Every change made to the code base will be referred to in the release notes (except for
 cleanups and refactorings).
 
@@ -113,8 +113,8 @@ Credits
 Made with :heart: :coffee: and :pizza: by `luismayta`_.
 
 .. |license| image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
-  :target: LICENSE
-  :alt: License
+    :target: LICENSE
+    :alt: License
 
 .. Links
 .. _`CHANGELOG`: CHANGELOG.rst

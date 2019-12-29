@@ -4,7 +4,7 @@ How To Contribute
 .. contents::
    :local:
 
-Contributions to {{ cookiecutter.repo_name }} are welcome.
+Contributions to {{ cookiecutter.repository_name }} are welcome.
 
 Getting Started
 ---------------
@@ -140,5 +140,5 @@ Try to keep history as linear as possible using a `rebase` merge strategy.
 
 #. Delete merged Branch
 
-.. _Issue: {{ cookiecutter.domain_repository }}/{{ cookiecutter.owner_repository }}/{{ cookiecutter.repo_name }}/issues
-.. _Pull Request: {{ cookiecutter.domain_repository }}/{{ cookiecutter.owner_repository }}/{{ cookiecutter.repo_name }}/pulls
+.. _Issue: {{ cookiecutter.repository_domain }}/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}/issues
+.. _Pull Request: {{ cookiecutter.repository_domain }}/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}/pulls

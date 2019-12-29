@@ -17,9 +17,9 @@ else
 	PIPENV_INSTALL:=
 endif
 
-TEAM := {{ cookiecutter.group_name }}
+TEAM := {{ cookiecutter.repository_owner }}
 AWS_VAULT ?= {{ cookiecutter.aws_vault }}
-PROJECT := {{ cookiecutter.repo_name }}
+PROJECT := {{ cookiecutter.repository_name }}
 PROJECT_PORT := {{ cookiecutter.project_port }}
 
 PYTHON_VERSION={{ cookiecutter.python_version }}

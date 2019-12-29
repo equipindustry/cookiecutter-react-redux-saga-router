@@ -1,8 +1,8 @@
 {
-  "name": "{{ cookiecutter.repo_name }}",
+  "name": "{{ cookiecutter.repository_name }}",
   "version": "{{ cookiecutter.version }}",
-  "repository": "{{ cookiecutter.domain_repository }}/{{ cookiecutter.owner_repository }}/{{ cookiecutter.repo_name }}.git",
-  "author": "{{ cookiecutter.author_name }} <{{ cookiecutter.email}}>",
+  "repository": "{{ cookiecutter.repository_domain }}/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}.git",
+  "author": "{{ cookiecutter.author_name }} <{{ cookiecutter.author_email}}>",
   "license": "MIT",
   "private": false,
   "scripts": {

@@ -3,7 +3,7 @@ FROM python:{{ cookiecutter.python_version }}-slim
 MAINTAINER Luis Mayta <@slovacus>
 
 ARG stage
-LABEL NAME {{ cookiecutter.project_slug }}-check-$stage
+LABEL NAME {{ cookiecutter.repository_name }}-check-$stage
 
 COPY Pipfile* /usr/src/
 

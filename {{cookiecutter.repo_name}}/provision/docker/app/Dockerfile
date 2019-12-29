@@ -1,10 +1,10 @@
 FROM python:{{ cookiecutter.python_version }}-slim
 
-MAINTAINER {{cookiecutter.full_name}} {{cookiecutter.email}}
+MAINTAINER {{cookiecutter.author_name}} {{cookiecutter.author_email}}
 
 ARG stage
 
-LABEL NAME {{ cookiecutter.project_slug }}-$stage
+LABEL NAME {{ cookiecutter.repository_name }}-$stage
 
 ENV USERNAME developer
 
